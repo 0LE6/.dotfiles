@@ -1,0 +1,36 @@
+[general]
+import = ["~/.config/alacritty/themes/rose-pine.toml"]
+# import = ["~/.config/alacritty/themes/osaka-jade.toml"]
+# import = ["~/.config/alacritty/themes/carbonfox.toml"]
+# import = ["~/.config/alacritty/themes/hardhacker.toml"]
+# import = ["~/.config/alacritty/themes/kanagawa-dragon.toml"]
+# import = ["~/.config/alacritty/themes/dustfox.toml"]
+# import = ["~/.config/alacritty/themes/tokyo-night.toml"]
+# import = ["~/.config/alacritty/themes/tomorrow.toml"]
+
+[window]
+padding = { x = 6,y = 0 }
+decorations = "Full"
+dynamic_padding = true
+
+[font]
+size = 12.5 
+
+[font.normal]
+family = "BlexMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Monospace"
+style = "Bold"
+
+[font.italic]
+family = "Monospace"
+style = "Italic"
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+shape = "Beam"
+blinking = "Always"
