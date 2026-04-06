@@ -1,0 +1,70 @@
+# Tokyo Night Dark Enhanced
+# Converted from VS Code theme
+# Author: Venage5603
+
+[colors.primary]
+background = "#08080b"
+foreground = "#787c99"
+
+[colors.cursor]
+text = "#08080b"
+cursor = "#c0caf5"
+
+[colors.selection]
+text = "#a9b1d6"
+background = "#515c7e"
+
+[colors.normal]
+black   = "#363b54"
+red     = "#f7768e"
+green   = "#41a6b5"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#787c99"
+
+[colors.bright]
+black   = "#363b54"
+red     = "#f7768e"
+green   = "#41a6b5"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#acb0d0"
+
+[colors.dim]
+black   = "#2b2b3b"
+red     = "#914c54"
+green   = "#164846"
+yellow  = "#c49a5a"
+blue    = "#394b70"
+magenta = "#9d7cd8"
+cyan    = "#449dab"
+white   = "#515670"
+
+[colors.search.matches]
+foreground = "#08080b"
+background = "#e0af68"
+
+[colors.search.focused_match]
+foreground = "#08080b"
+background = "#3d59a1"
+
+[colors.hints.start]
+foreground = "#08080b"
+background = "#e0af68"
+
+[colors.hints.end]
+foreground = "#08080b"
+background = "#7aa2f7"
+
+[colors.line_indicator]
+foreground = "None"
+background = "#1e202e"
+
+[colors.footer_bar]
+foreground = "#787c99"
+background = "#08080b"
+
