@@ -1,0 +1,29 @@
+.dotfiles/
+    alacritty/
+        .config/alacritty/
+                    alacritty.toml
+                    themes/
+                        theme-example.toml
+                        ...
+    nvim/
+        .config/nvim/
+                    init.lua
+                    lua/
+                        config/
+                            init.lua
+                            lazy/
+                                pluggin.lua
+                                ...
+    tmux/
+        .tmux.conf 
+    i3/
+        .config/i3
+    starship/
+        .config/starship.toml
+    bash/
+        aliases/
+            general.sh
+        functions/
+            general.sh
+    
+
