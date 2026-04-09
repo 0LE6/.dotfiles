@@ -21,11 +21,13 @@ family = "BlexMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "Monospace"
+# family = "Monospace"
+family = "BlexMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Monospace"
+# family = "Monospace"
+family = "BlexMono Nerd Font"
 style = "Italic"
 
 [cursor]
