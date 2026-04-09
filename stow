@@ -1,0 +1,5 @@
+stow alacritty
+stow bash
+stow nvim
+stow starship
+stow tmux
