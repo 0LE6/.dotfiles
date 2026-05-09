@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# sudo systemctl enable --now bluetooth
+# yay -S rofi-bluetooth-git
+
+case "$BLOCK_BUTTON" in
+    1)
+        rofi-bluetooth &
+        ;;
+esac
+
+BT_POWERED=$(echo show | bluetoothctl 2>/dev/null | awk '/Powered:/ {print $2}')
+
+if [ "$BT_POWERED" = "yes" ]; then
+    echo "󰂯"
+else
+    echo "󰂲"
+fi
