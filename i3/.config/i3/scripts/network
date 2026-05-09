@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+SSID=$(nmcli -t -f ACTIVE,SSID dev wifi | awk -F: '$1=="yes"{print $2}')
+
+case "$BLOCK_BUTTON" in
+    1)
+        networkmanager_dmenu &
+        ;;
+    3)
+        nm-connection-editor &
+        ;;
+esac
+
+if [ -n "$SSID" ]; then
+    echo "  $SSID"
+else
+    echo "󰤭 "
+fi
