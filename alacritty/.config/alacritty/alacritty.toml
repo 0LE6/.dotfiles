@@ -14,21 +14,33 @@ decorations = "Full"
 dynamic_padding = true
 
 [font]
-size = 12.5 
+size = 13.5 
 
 [font.normal]
-family = "BlexMono Nerd Font"
+family = "Maple Mono Normal NL NF"
 style = "Regular"
 
 [font.bold]
-# family = "Monospace"
-family = "BlexMono Nerd Font"
+family = "Maple Mono Normal NL NF"
 style = "Bold"
 
 [font.italic]
-# family = "Monospace"
-family = "BlexMono Nerd Font"
+family = "Maple Mono Normal NL NF"
 style = "Italic"
+
+# [font.normal]
+# family = "BlexMono Nerd Font"
+# style = "Regular"
+#
+# [font.bold]
+# # family = "Monospace"
+# family = "BlexMono Nerd Font"
+# style = "Bold"
+#
+# [font.italic]
+# # family = "Monospace"
+# family = "BlexMono Nerd Font"
+# style = "Italic"
 
 [cursor]
 blink_interval = 500
