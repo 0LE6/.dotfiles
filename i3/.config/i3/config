@@ -1,5 +1,6 @@
 font pango: Noto Sans Regular 14
 font pango: BlexMono Nerd Font 14
+font pango: Maple Mono Normal NL NF 11
 
 # set the mod key to the winkey:
 set $mod Mod4
