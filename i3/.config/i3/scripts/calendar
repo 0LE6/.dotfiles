@@ -5,14 +5,13 @@ HEIGHT=${HEIGHT:-200}
 DATEFMT=${DATEFMT:-"+%d.%m.%Y %H:%M:%S"}
 SHORTFMT=${SHORTFMT:-"+%H:%M:%S"}
 
-read SCREEN_WIDTH SCREEN_HEIGHT <<<$(xrandr | awk '/\*/ {print $1; exit}' | tr 'x' ' ')
-
 OPTIND=1
+
 while getopts ":f:W:H:" opt; do
-    case $opt in
-        f) DATEFMT="$OPTARG" ;;
-        W) WIDTH="$OPTARG" ;;
-        H) HEIGHT="$OPTARG" ;;
+    case "$opt" in
+        f) DATEFMT=$OPTARG ;;
+        W) WIDTH=$OPTARG ;;
+        H) HEIGHT=$OPTARG ;;
         \?)
             echo "Invalid option: -$OPTARG" >&2
             exit 1
@@ -24,20 +23,22 @@ while getopts ":f:W:H:" opt; do
     esac
 done
 
-case "$BLOCK_BUTTON" in
-  1|2|3) 
-
-    posX=$(( SCREEN_WIDTH - WIDTH - 70 ))
-    posY=6
-
-	i3-msg -q "exec yad --calendar \
-        --width=$WIDTH --height=$HEIGHT \
-	    --undecorated --fixed \
-        --close-on-unfocus --no-buttons \
-	    --posx=$posX --posy=$posY \
-	    > /dev/null"
-
-
+case "${BLOCK_BUTTON:-}" in
+    1|2|3)
+        # Show the calendar at the current mouse pointer position.
+        yad --calendar \
+            --width="$WIDTH" \
+            --height="$HEIGHT" \
+            --undecorated \
+            --fixed \
+            --close-on-unfocus \
+            --no-buttons \
+            --mouse \
+            >/dev/null 2>&1 &
+        ;;
 esac
-echo "$(date "$DATEFMT")"
-/* echo "$LABEL$(date "$SHORTFMT")" */
+
+date "$DATEFMT"
+
+# To display only the time instead:
+# date "$SHORTFMT"
