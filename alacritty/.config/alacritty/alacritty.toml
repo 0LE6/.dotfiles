@@ -14,7 +14,7 @@ decorations = "Full"
 dynamic_padding = true
 
 [font]
-size = 13.5 
+size = 13 
 
 [font.normal]
 family = "Maple Mono Normal NL NF"
