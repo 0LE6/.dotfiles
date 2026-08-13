@@ -4,7 +4,8 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # custom
-alias cls='clear'
+# alias cls='clear'
+alias cn='clear'
 alias xz='exit'
 alias l='ls -AF'
 alias ll='ls -lahF'
