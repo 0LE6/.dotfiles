@@ -219,7 +219,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -491,7 +491,7 @@ bindsym $mod+d workspace back_and_forth
 
 ## rofi bindings fancy application menu
 
-bindsym $mod+r exec --no-startup-id rofi -modi drun -show drun \
+bindsym $mod+space exec --no-startup-id rofi -modi drun -show drun \
         -config ~/.config/rofi/rofidmenu.rasi
 
 ## rofi bindings for window menu
