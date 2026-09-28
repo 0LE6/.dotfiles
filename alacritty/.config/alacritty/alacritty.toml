@@ -17,16 +17,29 @@ dynamic_padding = true
 size = 11 
 
 [font.normal]
-family = "Maple Mono Normal NL NF"
+family = "Comic Mono Align"
 style = "Regular"
 
 [font.bold]
-family = "Maple Mono Normal NL NF"
-style = "Bold"
+family = "Comic Mono Align"
+style = "Regular"
 
 [font.italic]
-family = "Maple Mono Normal NL NF"
-style = "Italic"
+family = "Comic Mono Align"
+style = "Regular"
+# [font.normal]
+# family = "Maple Mono Normal NL NF"
+# style = "Regular"
+#
+# [font.bold]
+# family = "Maple Mono Normal NL NF"
+# style = "Bold"
+#
+# [font.italic]
+# family = "Maple Mono Normal NL NF"
+# style = "Italic"
+
+# ---
 
 # [font.normal]
 # family = "BlexMono Nerd Font"
