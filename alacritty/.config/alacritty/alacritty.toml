@@ -16,6 +16,7 @@ dynamic_padding = true
 [font]
 size = 11 
 
+# --- COMIC MONO ALIGN ---
 [font.normal]
 family = "Comic Mono Align"
 style = "Regular"
@@ -27,6 +28,9 @@ style = "Regular"
 [font.italic]
 family = "Comic Mono Align"
 style = "Regular"
+
+# --- MAPLE ---
+
 # [font.normal]
 # family = "Maple Mono Normal NL NF"
 # style = "Regular"
@@ -39,7 +43,7 @@ style = "Regular"
 # family = "Maple Mono Normal NL NF"
 # style = "Italic"
 
-# ---
+# --- BLEX ---
 
 # [font.normal]
 # family = "BlexMono Nerd Font"
